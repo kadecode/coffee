@@ -24,7 +24,7 @@ class AppNew extends StatelessWidget {
                   backgroundColor: Colors.amber[100],
                 ),
                 Text(
-                  'Coffee Sunumları',
+                  'Coffee Presentation',
                   style: GoogleFonts.playfairDisplay(
                     fontSize: 40,
                     color: Colors.black,
@@ -35,48 +35,53 @@ class AppNew extends StatelessWidget {
                   style: GoogleFonts.playfairDisplay(
                       fontSize: 22, color: Colors.brown),
                 ),
-                Center(
-                  child: Container(
-                    color: Colors.amber,
-                    margin: const EdgeInsets.symmetric(
-                      horizontal: 40.0,
-                      vertical: 20.0,
-                    ),
-                    padding: const EdgeInsets.all(12.0),
-                    child: Row(
-                      children: const [
-                        Icon(Icons.email, size: 20, color: Colors.blueGrey),
-                        SizedBox(width: 10.0),
-                        Text(
-                          'takeaway@coffee.com',
-                          style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 20,
-                          ),
-                        )
-                      ],
+                Container(
+                  width: 200,
+                  child: const Divider(
+                    height: 30,
+                    color: Colors.brown,
+                  ),
+                ),
+                const Card(
+                  color: Colors.amber,
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 40.0,
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: ListTile(
+                      leading:
+                          Icon(Icons.email, size: 20, color: Colors.blueGrey),
+                      title: Text(
+                        'takeaway@coffee.com',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 20,
+                        ),
+                      ),
                     ),
                   ),
                 ),
-                Center(
-                  child: Container(
-                    color: Colors.amber,
-                    margin: const EdgeInsets.symmetric(
-                      horizontal: 40.0,
-                    ),
-                    padding: const EdgeInsets.all(12.0),
-                    child: Row(
-                      children: const [
-                        Icon(Icons.phone, size: 20, color: Colors.blueGrey),
-                        SizedBox(width: 10.0),
-                        Text(
-                          '+90 554 4445555',
-                          style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 20,
-                          ),
-                        )
-                      ],
+                const SizedBox(
+                  height: 20.0,
+                ),
+                const Card(
+                  color: Colors.amber,
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 40.0,
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: ListTile(
+                      leading:
+                          Icon(Icons.phone, size: 20, color: Colors.blueGrey),
+                      title: Text(
+                        '+90 554 4445555',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 20,
+                        ),
+                      ),
                     ),
                   ),
                 ),
